@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
 **3.2** All external downloads not from a public API/server must be specified.  
 **3.3** Any interactions with other plugins or incompatibilities must be stated.  
 **3.4** When updating, it is advisable to include a list of changes in the update.
+**3.5** If the plugin is a fork, it must be reported.
+**3.6** If you wish, you can leave several links that will be added to the plugin publication.
 
 To publish a plugin, use this:`;
 
@@ -52,6 +54,8 @@ To publish a plugin, use this:`;
 **3.2** Необходимо указать все внешние загрузки, не с публичного API/сервера.  
 **3.3** Необходимо указать взаимодействие с другими плагинами и возможные несовместимости.
 **3.4** При обновлении желательно указать список изменений.
+**3.5** Если плагин является форком, об этом нужно сообщить.
+**3.6** По желанию, вы можете оставить несколько ссылок которые будут добавлены в публикацию плагина.
 
 Что бы опубликовать плагин, воспользуйтесь этим:`;
 
