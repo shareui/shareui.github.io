@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #222;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.lang-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lang-buttons button {
+    padding: 12px 32px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.lang-buttons button:hover {
+    background-color: #222;
+    border-color: #444;
+}
+
+main {
+    flex: 1;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+#markdown-en, #markdown-ru {
+    margin-bottom: 50px;
+}
+
+#markdown-en h1, #markdown-ru h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+#markdown-en h2, #markdown-ru h2 {
+    font-size: 1.4rem;
+    margin: 30px 0 15px;
+    color: #fff;
+}
+
+#markdown-en h3, #markdown-ru h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    color: #fff;
+}
+
+#markdown-en p, #markdown-ru p,
+#markdown-en li, #markdown-ru li {
+    margin-bottom: 10px;
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#markdown-en strong, #markdown-ru strong,
+#markdown-en b, #markdown-ru b {
+    font-weight: 500;
+    color: #fff;
+}
+
+#markdown-en em, #markdown-ru em,
+#markdown-en i, #markdown-ru i {
+    font-style: italic;
+    color: #ccc;
+}
+
+#markdown-en blockquote, #markdown-ru blockquote {
+    border-left: 4px solid #333;
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #aaa;
+    font-style: italic;
+}
+
+#markdown-en ul, #markdown-ru ul {
+    list-style-position: inside;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#markdown-en li, #markdown-ru li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 10px;
+}
+
+#markdown-en li::before, #markdown-ru li::before {
+    content: ">";
+    position: absolute;
+    left: -10px;
+    color: #666;
+}
+
+#markdown-en code, #markdown-ru code {
+    background-color: #1a1a1a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #ccc;
+    border: 1px solid #333;
+}
+
+#markdown-en pre, #markdown-ru pre {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    overflow-x: auto;
+    border: 1px solid #333;
+}
+
+#markdown-en pre code, #markdown-ru pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.publish-section {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid #222;
+}
+
+.publish-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.publish-button:hover {
+    background-color: #222;
+    border-color: #444;
+    transform: translateY(-2px);
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #222;
+    margin-top: 50px;
+}
+
+#animated-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+    
+    .lang-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .lang-buttons button {
+        width: 200px;
+    }
+    
+    #markdown-en h1, #markdown-ru h1 {
+        font-size: 1.6rem;
+    }
+    
+    #markdown-en h2, #markdown-ru h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .publish-button {
+        padding: 14px 32px;
+        font-size: 1rem;
+    }
+}
