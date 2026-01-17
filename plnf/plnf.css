@@ -112,6 +112,10 @@ main {
     color: #fff;
 }
 
+#markdown-en strong::after, #markdown-ru strong::after {
+    content: " ";
+}
+
 #markdown-en em, #markdown-ru em,
 #markdown-en i, #markdown-ru i {
     font-style: italic;
@@ -135,13 +139,13 @@ main {
 #markdown-en li, #markdown-ru li {
     margin-bottom: 8px;
     position: relative;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 #markdown-en li::before, #markdown-ru li::before {
     content: ">";
     position: absolute;
-    left: -10px;
+    left: 0;
     color: #666;
 }
 
@@ -215,26 +219,26 @@ footer {
     .container {
         padding: 30px 15px;
     }
-    
+
     h1 {
         font-size: 2.2rem;
         margin-bottom: 25px;
     }
-    
+
     .lang-buttons {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    
+
     .lang-buttons button {
         width: 200px;
     }
-    
+
     #markdown-en h1, #markdown-ru h1 {
         font-size: 1.6rem;
     }
-    
+
     #markdown-en h2, #markdown-ru h2 {
         font-size: 1.3rem;
     }
@@ -244,11 +248,11 @@ footer {
     .container {
         padding: 20px 10px;
     }
-    
+
     h1 {
         font-size: 1.8rem;
     }
-    
+
     .publish-button {
         padding: 14px 32px;
         font-size: 1rem;
