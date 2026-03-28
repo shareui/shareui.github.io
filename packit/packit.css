@@ -37,14 +37,23 @@ main {
 h1 {
     font-size: 2.8rem;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     color: #fff;
     letter-spacing: -0.5px;
 }
 
+.description {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #888;
+    max-width: 480px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+}
+
 .buttons {
     display: flex;
-    gap: 30px;
+    gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -58,7 +67,7 @@ h1 {
     color: #e0e0e0;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     border: 1px solid #333;
     transition: all 0.3s ease;
@@ -72,20 +81,59 @@ h1 {
 }
 
 .button i {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
-.projects {
+.developers {
     margin-top: 60px;
-    text-align: center;
 }
 
-.projects h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: -0.3px;
-    margin-bottom: 30px;
+.developers h2 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.dev-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+
+.dev-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.dev-item:hover {
+    background: #141414;
+}
+
+.dev-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.dev-role {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #555;
+}
+
+.dev-separator {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 footer {
@@ -104,18 +152,26 @@ footer {
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2rem;
-        margin-bottom: 40px;
     }
-    
+
     .buttons {
         flex-direction: column;
-        gap: 20px;
+        gap: 14px;
         width: 100%;
         max-width: 300px;
     }
-    
+
     .button {
         justify-content: center;
+    }
+
+    .dev-list {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .dev-separator {
+        display: none;
     }
 }
 
@@ -123,13 +179,8 @@ footer {
     main {
         padding: 30px 20px;
     }
-    
+
     h1 {
         font-size: 1.8rem;
-    }
-    
-    .button {
-        padding: 14px 28px;
-        font-size: 1rem;
     }
 }
