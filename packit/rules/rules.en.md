@@ -34,7 +34,7 @@
 
 **2.6** must have a **unique id.** recommended format: `{username}_{id}` _(not required)._
 
-**2.7** must specify a correct `min_version` in metadata if the plugin depends on **specific features of newer versions** of elyxcore or the client.
+**2.7** must specify a correct `min_version`/`app_version`/`sdk_version`/`elyx_version` in metadata if the plugin depends on **specific features of newer versions** of elyxcore or the client.
 
 **2.8** despite rule 2.3, links to **voluntary donations** are allowed in description or settings, _as long as they don't restrict basic functionality._
 
