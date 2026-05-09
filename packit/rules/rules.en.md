@@ -22,7 +22,7 @@
 
 ## quality
 
-**2.1** must not be **obviously written by an AI** — at least clean up the comments.
+**2.1** Neuroslope working on God's word is prohibited.
 
 **2.2** must not be an **exact copy** of an existing plugin, or differ only in minor changes.
 
