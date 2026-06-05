@@ -47,3 +47,19 @@
 **2.12** the `__author__` field must not contain **someone else's name or username without their consent.** exceptions: a fork with explicit credit to the original author, a collaboration, or other written agreement.
 
 **2.13** the plugin must **deliver the functionality described.** the description must not exaggerate capabilities or promise features that are not implemented.
+
+## special rules
+
+**3.1** you may only publish **plugins you own the rights to** — including forks, provided the original license is respected.
+
+**3.2** if a plugin is **obfuscated, encrypted, or compiled** — it can be decompiled for inspection, even if the source code is available. the source code is not shared with third parties and is only available to the moderator.
+
+**3.3** if the **rules are updated,** all plugins that no longer comply with them are subject to removal.
+
+**3.4** the administration reserves the right to **reject a publication without explanation.**
+
+**3.5** the source code provided for inspection is **strictly confidential** and is used only for security audits.
+
+**3.6** the administration reserves the right to **make exceptions to the rules** by noting them in the tags.
+
+**3.7** moderation timeframes are **not regulated** and depend on the complexity of the code and the administrator's workload.
