@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(function() { targetEl.textContent = 'failed to load.'; });
     }
 
-    loadMd('rules.en.md', document.getElementById('md-en'));
-    loadMd('rules.ru.md', document.getElementById('md-ru'));
+    loadMd('en.md', document.getElementById('md-en'));
+    loadMd('ru.md', document.getElementById('md-ru'));
 
     function showEn() {
         sectionEn.classList.add('active');
@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
     btnEn.addEventListener('click', showEn);
     btnRu.addEventListener('click', showRu);
 
-    showEn();
+    // show ru if browser language starts with 'ru', otherwise en
+    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    browserLang.startsWith('ru') ? showRu() : showEn();
 
     const baseText = 'End of page';
     let dotsCount = 0;

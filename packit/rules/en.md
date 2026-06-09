@@ -58,7 +58,11 @@
 
 **3.2** Once a plugin is installed from the catalog, the **user** — not the catalog — is responsible for any updates that occur **outside of PackIt** (e.g. built-in auto-updates within the plugin).
 
-**3.3** If a plugin is **obfuscated, encrypted, or compiled** — it can be decompiled for inspection, even if the source code is available. The source code is not shared with third parties and is only available to the moderator.
+**3.3** Source code requirements depend on the distribution model:
+
+- **Open source** — allowed without restrictions.
+- **Closed source** — the author must provide the source code to the administrator for review. Regardless of whether source code is provided, the plugin may be decompiled. The source code is not shared with third parties and is only available to the moderator.
+- **Closed/obfuscated code without providing source** is only allowed for **paid plugins.** If any rule violation is found — a **permanent ban** on publishing plugins, removal of the plugin and all its forks.
 
 **3.4** If the **rules are updated,** all plugins that no longer comply with them are subject to removal.
 
